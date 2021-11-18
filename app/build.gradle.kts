@@ -36,7 +36,7 @@ android {
 }
 
 dependencies {
-    implementation("androidx.appcompat:appcompat:1.3.1")
+    implementation("androidx.appcompat:appcompat:1.4.0")
     implementation("com.google.android.material:material:1.4.0")
     implementation("com.jakewharton:butterknife:10.2.3")
     annotationProcessor("com.jakewharton:butterknife-compiler:10.2.3")
