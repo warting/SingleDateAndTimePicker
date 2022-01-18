@@ -205,9 +205,9 @@ Use in conjuction with
 
 <a href='https://ko-fi.com/A160LCC' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi1.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
-In your module [![Download](https://api.bintray.com/packages/florent37/maven/SingleDateAndTimePicker/images/download.svg)](https://bintray.com/florent37/maven/SingleDateAndTimePicker/_latestVersion)
+In your module [![Download](https://search.maven.org/artifact/se.warting.datepicker/singledateandtimepicker/2.2.10/aar)
 ```groovy
-implementation 'com.github.florent37:singledateandtimepicker:2.2.7'
+implementation 'se.warting.datepicker:singledateandtimepicker:2.2.10'
 //compatible with androidX
 ```
 
