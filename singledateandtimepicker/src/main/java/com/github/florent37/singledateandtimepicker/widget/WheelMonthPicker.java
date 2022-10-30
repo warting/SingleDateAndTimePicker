@@ -46,7 +46,7 @@ public class WheelMonthPicker extends WheelPicker<String> {
         for (int i = 0; i < 12; i++) {
             cal.set(Calendar.MONTH, i);
             if (displayMonthNumbers) {
-                monthList.add(String.format("%02d", i + 1));
+                monthList.add(String.format(getCurrentLocale(), "%02d", i + 1));
             } else {
                 monthList.add(month_date.format(cal.getTime()));
             }
@@ -96,20 +96,15 @@ public class WheelMonthPicker extends WheelPicker<String> {
         void onMonthSelected(WheelMonthPicker picker, int monthIndex, String monthName);
     }
 
-    public void setMonthFormat(String format)
-    {
+    public void setMonthFormat(String format) {
         this.monthFormat = format;
     }
 
-    public String getMonthFormat()
-    {
-       if(TextUtils.isEmpty(this.monthFormat))
-       {
-           return MONTH_FORMAT;
-       }
-       else
-       {
-           return this.monthFormat;
-       }
+    public String getMonthFormat() {
+        if (TextUtils.isEmpty(this.monthFormat)) {
+            return MONTH_FORMAT;
+        } else {
+            return this.monthFormat;
+        }
     }
 }

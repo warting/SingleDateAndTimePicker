@@ -24,7 +24,6 @@ import android.view.ViewConfiguration;
 import android.widget.Scroller;
 
 import com.github.florent37.singledateandtimepicker.DateHelper;
-import com.github.florent37.singledateandtimepicker.LocaleHelper;
 import com.github.florent37.singledateandtimepicker.R;
 
 import java.util.ArrayList;
@@ -1023,7 +1022,7 @@ public abstract class WheelPicker<V> extends View {
     }
 
     public String getLocalizedString(@StringRes int stringRes) {
-        return LocaleHelper.getString(getContext(), getCurrentLocale(), stringRes);
+        return getContext().getString(stringRes);
     }
 
     @TargetApi(Build.VERSION_CODES.N)
