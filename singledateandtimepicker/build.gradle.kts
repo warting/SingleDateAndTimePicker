@@ -14,24 +14,24 @@ val PUBLISH_ARTIFACT_ID by extra("singledateandtimepicker")
 apply(from = "${rootProject.projectDir}/gradle/publish-module.gradle")
 
 android {
-    compileSdk = 31
+    compileSdk = 32
 
     defaultConfig {
         minSdk=  14
-        targetSdk=  28
     }
     lint {
-        baseline(file("lint-baseline.xml"))
-        isCheckReleaseBuilds = true
-        isCheckAllWarnings = true
-        isWarningsAsErrors = true
-        isAbortOnError = true
+        baseline = file("lint-baseline.xml")
+        checkReleaseBuilds = true
+        checkAllWarnings = true
+        warningsAsErrors = true
+        abortOnError = true
         disable.add("LintBaseline")
         disable.add("GradleDependency")
-        isCheckDependencies = true
-        isCheckGeneratedSources = false
-        sarifOutput = file("../lint-results-app.sarif")
+        checkDependencies = true
+        checkGeneratedSources = false
+        sarifOutput = file("../lint-results-lib.sarif")
     }
+    namespace = "com.github.florent37.singledateandtimepicker"
 }
 
 dependencies {

@@ -3,6 +3,7 @@ package com.github.florent37.singledateandtimepicker.widget;
 
 import android.content.Context;
 import android.util.AttributeSet;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,7 +31,7 @@ public class WheelDayOfMonthPicker extends WheelPicker<String> {
         final List<String> dayList = new ArrayList<>();
 
         for (int i = 1; i <= daysInMonth; i++) {
-            dayList.add(String.format("%02d", i));
+            dayList.add(String.format(getCurrentLocale(), "%02d", i));
         }
 
         return dayList;
