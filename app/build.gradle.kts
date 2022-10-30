@@ -37,7 +37,7 @@ android {
 
 dependencies {
     implementation("androidx.appcompat:appcompat:1.4.2")
-    implementation("com.google.android.material:material:1.6.1")
+    implementation("com.google.android.material:material:1.7.0")
     implementation("com.jakewharton:butterknife:10.2.3")
     annotationProcessor("com.jakewharton:butterknife-compiler:10.2.3")
     implementation(project(":singledateandtimepicker"))
